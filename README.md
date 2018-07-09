@@ -117,6 +117,7 @@ A collection of utilities for working with
       * [`U.takeFirstErrors(number, observable)` ⌘](https://kefirjs.github.io/kefir/#take-errors)
       * [`U.takeUntilBy(eventStream, observable)` ⌘](https://kefirjs.github.io/kefir/#take-until-by)
       * [`U.throttle(ms, observable)` ⌘](https://kefirjs.github.io/kefir/#throttle)
+      * [`U.toObservable(observable)` ⌘](https://kefirjs.github.io/kefir/#constant)
       * [`U.toProperty(observable)` ⌘](https://kefirjs.github.io/kefir/#to-property)
     * [Additional combinators](#additional-combinators)
       * [`U.consume(action, observable)`](#U-consume)
@@ -1148,7 +1149,8 @@ functions also work on [Kefir](https://kefirjs.github.io/kefir/) observables.
 [Kefir](https://kefirjs.github.io/kefir/) is a traditional JavaScript library
 that provides a fluent API using method chaining.  Karet Util supports more
 functional style JavaScript by providing curried functions for programming with
-Kefir.
+Kefir.  The functions provided by Karet Util also try to avoid constructing
+observables unnecessarily.
 
 The following are simply links to the relevant
 [Kefir](https://kefirjs.github.io/kefir/) documentation:
@@ -1180,6 +1182,7 @@ The following are simply links to the relevant
 * [`U.takeFirstErrors(number, observable)` ⌘](https://kefirjs.github.io/kefir/#take-errors)
 * [`U.takeUntilBy(eventStream, observable)` ⌘](https://kefirjs.github.io/kefir/#take-until-by)
 * [`U.throttle(ms, observable)` ⌘](https://kefirjs.github.io/kefir/#throttle)
+* [`U.toObservable(observable)` ⌘](https://kefirjs.github.io/kefir/#constant)
 * [`U.toProperty(observable)` ⌘](https://kefirjs.github.io/kefir/#to-property)
 
 #### <a id="additional-combinators"></a> [≡](#contents) [Additional combinators](#additional-combinators)

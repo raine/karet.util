@@ -647,6 +647,15 @@ describe('toReact', () => {
   })
 })
 
+describe('shortcuts', () => {
+  testEq(101, () => U.delay(10, 101))
+  testEq(101, () => U.mapValue(x => x + 1, 100))
+  testEq(101, () => U.flatMapParallel(x => x + 1, 100))
+  testEq(101, () => U.flatMapSerial(x => x + 1, 100))
+  testEq(101, () => U.flatMapLatest(x => x + 1, 100))
+  testEq(101, () => U.toProperty(101))
+})
+
 describe('obsoleted', () => {
   testEq(2, () => U.seq(1, R.inc))
   testEq(2, () => U.seqPartial(1, R.inc))
